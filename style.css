@@ -1,0 +1,413 @@
+/* =========================
+   MEDHA BIRTHDAY WEBSITE
+   PREMIUM CSS
+========================= */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    min-height:100vh;
+
+    font-family:'Segoe UI',Arial,sans-serif;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+    overflow:hidden;
+
+    background:
+    radial-gradient(circle at top,#392a72,#080812);
+
+}
+
+
+/* =========================
+        GIFT PAGE
+========================= */
+
+
+.black{
+
+    background:
+    radial-gradient(circle,#1b1b3a,#000);
+
+}
+
+
+
+.gift{
+
+    animation:fadeIn 1.5s;
+
+}
+
+
+
+.gift h1{
+
+    font-size:40px;
+
+    color:#ffd166;
+
+    text-shadow:
+    0 0 15px #ffd166,
+    0 0 40px #ff9f1c;
+
+    margin-bottom:40px;
+
+}
+
+
+
+
+button{
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:
+    linear-gradient(45deg,#ff4ecd,#7b2cff);
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:
+    0 0 20px #ff4ecd;
+
+}
+
+
+
+button:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+
+
+/* =========================
+      BIRTHDAY PAGE
+========================= */
+
+
+
+h1{
+
+    color:#ffd166;
+
+    text-shadow:
+    0 0 20px #ff4ecd;
+
+    margin-bottom:20px;
+
+}
+
+
+
+p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+
+
+
+/* =========================
+        PHOTO PAGE
+========================= */
+
+
+img{
+
+    width:190px;
+
+    height:190px;
+
+    object-fit:cover;
+
+    border-radius:25px;
+
+    margin:12px;
+
+
+    border:3px solid #ffd166;
+
+
+    box-shadow:
+    0 0 25px #ff4ecd;
+
+
+    animation:photo 1s;
+
+}
+
+
+
+#photos{
+
+    margin:25px;
+
+}
+
+
+
+
+/* =========================
+       LETTER PAGE
+========================= */
+
+
+.letterPage{
+
+
+background:
+
+linear-gradient(
+135deg,
+#0f0c29,
+#302b63,
+#24243e
+);
+
+
+}
+
+
+
+.letterCard{
+
+
+width:70%;
+
+max-width:650px;
+
+
+padding:40px;
+
+
+background:
+
+rgba(255,255,255,0.12);
+
+
+backdrop-filter:blur(18px);
+
+
+border-radius:30px;
+
+
+border:1px solid rgba(255,255,255,.25);
+
+
+box-shadow:
+
+0 0 40px #7b2cff;
+
+
+animation:cardOpen 1.2s;
+
+
+}
+
+
+
+
+.letterCard h1{
+
+color:#ffafcc;
+
+font-size:35px;
+
+}
+
+
+
+.line{
+
+height:3px;
+
+width:80%;
+
+margin:20px auto;
+
+
+background:#ffd166;
+
+border-radius:20px;
+
+}
+
+
+
+.letterCard p{
+
+
+font-family:Georgia,serif;
+
+
+font-size:19px;
+
+
+color:#f8f8ff;
+
+
+}
+
+
+
+
+.heart{
+
+
+margin:25px;
+
+font-size:30px;
+
+
+animation:heart 1s infinite;
+
+}
+
+
+
+.backBtn{
+
+
+background:
+
+linear-gradient(45deg,#ffd166,#ff4ecd);
+
+
+}
+
+
+
+/* =========================
+        FOOTER
+========================= */
+
+
+footer{
+
+position:absolute;
+
+bottom:20px;
+
+
+color:#ffd166;
+
+font-size:15px;
+
+}
+
+
+
+
+
+/* =========================
+        ANIMATION
+========================= */
+
+
+@keyframes fadeIn{
+
+
+from{
+
+opacity:0;
+transform:scale(.7);
+
+}
+
+
+to{
+
+opacity:1;
+transform:scale(1);
+
+}
+
+}
+
+
+
+@keyframes cardOpen{
+
+
+from{
+
+opacity:0;
+transform:translateY(80px);
+
+}
+
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+
+
+
+@keyframes heart{
+
+
+50%{
+
+transform:scale(1.3);
+
+}
+
+}
+
+
+
+@keyframes photo{
+
+
+from{
+
+opacity:0;
+transform:rotate(-10deg);
+
+}
+
+
+to{
+
+opacity:1;
+transform:rotate(0);
+
+}
+
+}
