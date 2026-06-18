@@ -12,8 +12,9 @@ document.getElementById("music").play();
 
 function showPhotos(){
 
-document.getElementById("photos").style.display="block";
 
+document.getElementById("photos").style.display="block";
+document.getElementById("music").play();
 }
 
 
@@ -21,5 +22,5 @@ document.getElementById("photos").style.display="block";
 function openLetter(){
 
 document.getElementById("letter").style.display="block";
-
+document.getElementById("music").play();
 }
